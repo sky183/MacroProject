@@ -15,13 +15,12 @@
         <maxHistory>7</maxHistory> <!-- 파일 저장 기간 -->
     </rollingPolicy>
     <encoder>
-        <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{32} - %msg%n</pattern>
         <!-- 파일에 기록할 로그 포맷 -->
+        <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{32} - %msg%n</pattern>
     </encoder>
 </appender>
 
 <!-- <logger name="org.springframework" level="INFO" /> -->
-
 <root level="DEBUG">
     <appender-ref ref="console" />
     <appender-ref ref="file" />

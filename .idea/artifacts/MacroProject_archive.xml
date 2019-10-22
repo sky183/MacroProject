@@ -3,6 +3,11 @@
     <output-path>$PROJECT_DIR$/out/artifacts/MacroProject_archive</output-path>
     <root id="archive" name="MacroProject archive.war">
       <element id="artifact" artifact-name="MacroProject" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MacroProject" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
