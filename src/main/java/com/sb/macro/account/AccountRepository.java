@@ -1,4 +1,4 @@
-package com.sb.account;
+package com.sb.macro.account;
 
 import com.sb.macro.account.Account;
 import org.springframework.data.jpa.repository.JpaRepository;

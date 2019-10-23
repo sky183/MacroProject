@@ -1,6 +1,6 @@
 package com.sb.macro.account;
 
-import com.sb.account.AccountRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,13 +12,15 @@ import org.springframework.stereotype.Service;
 /**
  * UserDetailsService - SpringSecurity의 기능이고 dao를 통해서 유저 정보를 가져오는 서비스, 여기서 인증을 하지는 않고 시큐리티에 제공하기만 하는 역할
  */
-@EnableJpaRepositories(basePackages={"com.sb.account"})
+//@EnableJpaRepositories(basePackages={"com.sb.account"})
 @Service
 public class AccountService implements UserDetailsService {
 
     //JPA를 사용하지 않고 MyBatis라면 Dao 객체가 온다.
+    @Autowired
     AccountRepository accountRepository;
 
+    @Autowired
     PasswordEncoder passwordEncoder;
 
     @Override

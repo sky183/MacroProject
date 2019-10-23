@@ -2,9 +2,11 @@
   <artifact type="exploded-war" name="MacroProject">
     <output-path>$PROJECT_DIR$/out/artifacts/MacroProject</output-path>
     <root id="root">
+      <element id="javaee-facet-resources" facet="MacroProject/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="MacroProject" />
+          <element id="jpa-descriptors" facet="MacroProject/jpa/JPA" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:5.0.7.RELEASE" />
@@ -79,7 +81,6 @@
           <element id="library" level="project" name="Maven: org.logback-extensions:logback-ext-spring:0.1.2" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="MacroProject/web/Web" />
     </root>
   </artifact>
 </component>
